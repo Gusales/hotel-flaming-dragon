@@ -1,18 +1,17 @@
 import { useSessionStorage } from './hooks/useSessionStorage.tsx'
 import { HomePage } from './pages/Home.tsx'
 import { LoginPage } from './pages/Login.tsx'
-import { Navigate, RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
 export function App() {
   const { sessionValue } = useSessionStorage('user', '')
-  console.log(sessionValue === '' ?  'TRUE' : 'FALSE')
   const router = createBrowserRouter([
     {
       path: '/',
       children: [
         {
           index: true,
-          element: <Navigate to='/login' replace />,
+          element: sessionValue === '' ? <LoginPage /> : <HomePage />,
         },
         {
           path: 'login',

@@ -21,8 +21,6 @@ export function FormLogin() {
     }
     else{
       setPasswordIsWrong(false)
-
-      /** Salvar no session storage o usuário */
       updateSessionStorage(login)
       navigate('/home')
     }
