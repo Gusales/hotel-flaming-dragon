@@ -4,6 +4,7 @@ import { useSessionStorage } from "@/hooks/useSessionStorage"
 
 import { Toaster } from "@/components/ui/sonner"
 import { BookingsContextProvider } from "@/contexts/BookingsContext"
+import { RegisterGuest } from "@/components/register-guest"
 
 export function HomePage() {
   const { sessionValue } = useSessionStorage('user', '')
@@ -15,9 +16,15 @@ export function HomePage() {
 
           <p className="text-xl text-zinc-200 my-4">Escolha uma opção:</p>
 
-          <ReserveRoom>
-            <Button variant="secondary">Reservar quarto</Button>
-          </ReserveRoom>
+          <section className="flex flex-col gap-4 w-fit">
+            <ReserveRoom>
+              <Button variant="secondary">Reservar quarto</Button>
+            </ReserveRoom>
+
+            <RegisterGuest>
+              <Button variant="secondary">Cadastrar hóspede</Button>
+            </RegisterGuest>
+          </section>
 
           <Toaster />
         </section>
