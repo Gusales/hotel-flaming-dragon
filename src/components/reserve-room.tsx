@@ -78,34 +78,40 @@ export function ReserveRoom({ children }: ReserveRoomProps){
           <DialogTitle>Reservar um quarto</DialogTitle>
           <DialogDescription>
             <form onSubmit={handleSubmit} className="space-y-4">
-              <Label htmlFor="price">Qual o valor padrão da diária?</Label>
-              <Input 
-                type="number" 
-                placeholder="R$ 0.00" 
-                id="price"
-                value={price}
-                onChange={e => setPrice(e.target.value)} 
-              />
+              <div>
+                <Label htmlFor="price">Qual o valor padrão da diária?</Label>
+                <Input 
+                  type="number" 
+                  placeholder="R$ 0.00" 
+                  id="price"
+                  value={price}
+                  onChange={e => setPrice(e.target.value)} 
+                />
+              </div>
 
-              <Label className="mt-4" htmlFor="days">Quantas diárias serão necessárias?</Label>
-              <Input 
-                type="number" 
-                placeholder="3" 
-                id="days" 
-                min={1} 
-                value={days}
-                onChange={e => setDays(parseInt(e.target.value))}  
-              />
+              <div>
+                <Label htmlFor="days">Quantas diárias serão necessárias?</Label>
+                <Input 
+                  type="number" 
+                  placeholder="3" 
+                  id="days" 
+                  min={1} 
+                  value={days}
+                  onChange={e => setDays(parseInt(e.target.value))}  
+                />
+              </div>
 
 
-              <Label htmlFor="name">Qual o nome do hóspede?</Label>
-              <Input 
-                id="name"
-                placeholder="Gabriel Azevedo"
-                value={name}
-                onChange={e => setName(e.target.value)}
-              />
-
+              <div>
+                <Label htmlFor="name">Qual o nome do hóspede?</Label>
+                <Input 
+                  id="name"
+                  placeholder="Gabriel Azevedo"
+                  value={name}
+                  onChange={e => setName(e.target.value)}
+                />
+              </div>
+              
               <div className="flex items-center gap-2">
                 <Label htmlFor="rooms" className="text-base">Escolha um quarto</Label>
                 <SelectRooms onChange={handleSelectRoom} id="rooms" />
