@@ -6,6 +6,7 @@ import { Toaster } from "@/components/ui/sonner"
 import { BookingsContextProvider } from "@/contexts/BookingsContext"
 import { RegisterGuest } from "@/components/register-guest"
 import { GuestsContextProvider } from "@/contexts/GuestsContext"
+import { SearchGuest } from "@/components/search-guest"
 
 export function HomePage() {
   const { sessionValue } = useSessionStorage('user', '')
@@ -22,6 +23,11 @@ export function HomePage() {
             <ReserveRoom>
               <Button variant="secondary">Reservar quarto</Button>
             </ReserveRoom>
+
+            <SearchGuest>
+              <Button variant="secondary">Procurar hóspedes</Button>
+            </SearchGuest>
+
 
             <RegisterGuest>
               <Button variant="secondary">Cadastrar hóspede</Button>
