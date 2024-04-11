@@ -7,6 +7,7 @@ import { BookingsContextProvider } from "@/contexts/BookingsContext"
 import { RegisterGuest } from "@/components/register-guest"
 import { GuestsContextProvider } from "@/contexts/GuestsContext"
 import { SearchGuest } from "@/components/search-guest"
+import { CreateEvent } from "@/components/create-event"
 
 export function HomePage() {
   const { sessionValue } = useSessionStorage('user', '')
@@ -32,6 +33,10 @@ export function HomePage() {
             <RegisterGuest>
               <Button variant="secondary">Cadastrar hóspede</Button>
             </RegisterGuest>
+
+            <CreateEvent>
+              <Button variant="secondary">Agendar evento</Button>
+            </CreateEvent>
           </section>
 
           <Toaster />
