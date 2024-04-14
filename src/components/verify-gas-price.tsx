@@ -44,7 +44,7 @@ export function VerifyGasPrice({ children }: { children: React.ReactNode }){
       </DialogTrigger>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Cadastrar hóspedes</DialogTitle>
+          <DialogTitle>Onde abastecer?</DialogTitle>
           <DialogDescription>
               <form className="w-full h-full grid grid-cols-2 gap-4 mt-6 items-center" onSubmit={handleSubmit}>
                 <Label>Qual o valor do álcool no posto Wayne Oil?</Label>
