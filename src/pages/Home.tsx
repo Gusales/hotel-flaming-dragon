@@ -17,12 +17,12 @@ export function HomePage() {
     <BookingsContextProvider>
     <GuestsContextProvider>
       <div className="w-screen h-screen">
-        <section className="pt-2 pl-4">
-          <h2 className="text-2xl text-zinc-50 font-semibold w-1/2 tracking-tight">Bem vindo ao hotel Flaming Dragon, {sessionValue}! É um prazer imenso ter você por aqui!</h2>
+        <section className="pt-16 pl-4 flex flex-col items-center">
+          <h2 className="text-2xl text-zinc-50 font-semibold w-[90%] sm:w-1/2 tracking-tight text-center">Bem vindo ao hotel Flaming Dragon, {sessionValue}! É um prazer imenso ter você por aqui!</h2>
 
           <p className="text-xl text-zinc-200 my-4">Escolha uma opção:</p>
 
-          <section className="flex flex-col gap-4 w-fit">
+          <section className="flex flex-col sm:grid sm:grid-cols-2 gap-4">
             <ReserveRoom>
               <Button variant="secondary">Reservar quarto</Button>
             </ReserveRoom>

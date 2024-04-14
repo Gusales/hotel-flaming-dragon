@@ -87,7 +87,7 @@ export function RepairAir({ children }: { children: React.ReactNode }) {
 
                 <div className="space-x-4 mb-4">
                   <Button type="submit">Adicionar</Button>
-                  <Button type="button" variant="secondary" className="border border-zinc-400" onClick={handleVerifyMinorPrice}>Verificar mais barato</Button>
+                  <Button type="button" variant="secondary" className="border border-zinc-400" onClick={handleVerifyMinorPrice}>Calcular</Button>
                   <Button type="button" variant="destructive">Cancelar</Button>
                 </div>
               </form>
