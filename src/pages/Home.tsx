@@ -9,6 +9,7 @@ import { GuestsContextProvider } from "@/contexts/GuestsContext"
 import { SearchGuest } from "@/components/search-guest"
 import { CreateEvent } from "@/components/create-event"
 import { VerifyGasPrice } from "@/components/verify-gas-price"
+import { RepairAir } from "@/components/repair-air"
 
 export function HomePage() {
   const { sessionValue } = useSessionStorage('user', '')
@@ -42,6 +43,10 @@ export function HomePage() {
             <VerifyGasPrice>
               <Button variant="secondary">Verificar preço do álcool e gasolina</Button>
             </VerifyGasPrice>
+
+            <RepairAir>
+              <Button variant="secondary">Reparar ar condicionado</Button>
+            </RepairAir>
           </section>
 
           <Toaster />
