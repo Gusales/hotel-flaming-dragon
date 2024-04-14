@@ -1,30 +1,31 @@
-# React + TypeScript + Vite
+# Hotel Flaming Dragon
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📖 Sobre o Projeto
+Todo mundo quer aprender a trabalhar com código, mas nós vamos além do código.
+Sua capacidade de analisar um problema é a habilidade mais importante que você pode desenvolver.
+Os problemas abaixo possuem um contexto mais rebuscado, mas vamos encontrar soluções.
 
-Currently, two official plugins are available:
+*Um hotel em Terabithia* é uma atividade onde precisamos por em prática muitos conceitos desenvolvidos durante as aulas de lógica de programação, como manipulação de variáveis, arrays e objetos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Resolvi desenvolver o *Hotel Flaming Dragon (Hotel Dragão Flamejante)* como uma forma de aplicar os conceitos de lógica com React e Typescript.
 
-## Expanding the ESLint configuration
+![App Screenshot](./.github/preview.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<hr />
 
-- Configure the top-level `parserOptions` property like this:
+## 🚀 Tecnologias utilizadas
+- ReactJS (vite);
+- Typescript;
+- TailwindCSS + ShadcnUI Components;
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## ⚒️ Funcionalidades do site
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Tela de **login** com verificação de senha;
+- Salvamento de dados com **Session Storage**;
+- Uso de **estados, arrays e objetos**;
+- Uso de **Context API**;
+- Design **Responsivo**;
+
+## 🚀 Acesse a demo do site
+
+Acesse o deploy da aplicação <a href="https://hotel-flaming-dragon.vercel.app/">por aqui!</a>.
